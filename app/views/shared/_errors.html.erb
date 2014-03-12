@@ -1,0 +1,10 @@
+<% if @errors %>
+    <div class="alert alert-error">
+      <h5>There were these errors:</h5>
+      <ul>
+        <% @post.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+<% end %>
